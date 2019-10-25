@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Dimensions } from "react-native";
-import { Container, Buttonn, Text, View } from 'native-base';
+import { Container, Button, Text, View } from 'native-base';
 
 class StartScreen extends Component {
     render() {
@@ -8,7 +8,7 @@ class StartScreen extends Component {
             <Container>
                 <View style={styles.view}>
                     <Button
-                        onPress={() => this.props.navigationn.navigate('Home')}
+                        onPress={() => this.props.navigation.navigate('Home')}
                         transparent
                         style={styles.buttonn} >
                         <Text style={styles.text}>ホーム画面へ</Text>

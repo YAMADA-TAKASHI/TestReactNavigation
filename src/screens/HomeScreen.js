@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { StyleSheet, Dimensions } from "react-native";
 import { Container, Button, Text, View } from "native-base";
 
-class HomeScreen extends Component {
+type Props = {};
+class HomeScreen extends Component<Props> {
     render() {
         return (
             <Container>
                 <View style={styles.view}>
                     <Button
-                        onPress={() => this.props.navigation.navigate('Starthi')}
+                        onPress={() => this.props.navigation.navigate('Start')}
                         transparent
                         style={styles.button} >
                         <Text style={styles.text}>起動画面へ</Text>

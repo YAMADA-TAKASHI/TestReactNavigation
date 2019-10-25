@@ -1,8 +1,11 @@
 import {
-    createStackNavigator,
-    createAppContainter,
+    createAppContainer,
     createBottomTabNavigator,
 } from 'react-navigation';
+
+import {
+    createStackNavigator,
+} from 'react-navigation-stack';
 
 import StartScreen from "../screens/StartScreen";
 import HomeScreen from "../screens/HomeScreen";
@@ -35,4 +38,4 @@ const MainNavigation = createStackNavigator(
     },
 );
 
-export default AppNavigator = createAppContainter(MainNavigation);
+export default AppNavigator = createAppContainer(MainNavigation);
